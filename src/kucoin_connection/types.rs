@@ -48,8 +48,8 @@ where
 #[serde(rename_all = "camelCase")]
 /// https://www.kucoin.com/docs/websocket/basic-info/apply-connect-token/public-token-no-authentication-required-
 pub struct PublicTokenResponse {
-    code: String,
     pub data: PublicTokenData,
+    // code: String,
 }
 
 #[derive(Debug, Deserialize)]
@@ -63,8 +63,8 @@ pub struct PublicTokenData {
 #[serde(rename_all = "camelCase")]
 pub struct InstanceServer {
     pub endpoint: String,
-    encrypt: bool,
     pub protocol: String,
-    ping_interval: u32,
-    ping_timeout: u32,
+    // encrypt: bool,
+    // ping_interval: u32,
+    // ping_timeout: u32,
 }
